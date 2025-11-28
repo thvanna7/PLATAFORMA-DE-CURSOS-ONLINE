@@ -1,4 +1,3 @@
-# curso.py
 from db_connection import get_conn
 
 class Curso:

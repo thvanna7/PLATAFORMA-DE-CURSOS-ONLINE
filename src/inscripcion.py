@@ -1,4 +1,3 @@
-# inscripcion.py
 from db_connection import get_conn
 from datetime import date
 

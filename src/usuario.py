@@ -1,4 +1,3 @@
-# usuario.py
 from db_connection import get_conn
 import hashlib
 

@@ -66,7 +66,7 @@ def main():
         create_table_cursos(conn)
         create_table_inscripciones(conn)
         close_connection(conn)
-        print("\n Database setup completed.")
+        print("\n✅ Database setup completed.")
 
 
 if __name__ == "__main__":

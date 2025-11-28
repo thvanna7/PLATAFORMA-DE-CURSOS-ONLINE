@@ -341,7 +341,6 @@ def ajustar_menu_por_rol():
         acciones_menu.entryconfig("Ver estadísticas", state="disabled")
         acciones_menu.entryconfig("Inscribirse a curso", state="disabled")
         acciones_menu.entryconfig("Mis inscripciones", state="disabled")
-        acciones_menu.entryconfig("Ver mi progreso", state="disabled")
         
     elif current_user.tipoUsuario == 'instructor':
         acciones_menu.entryconfig("Listar usuarios", state="disabled")
@@ -352,7 +351,7 @@ def ajustar_menu_por_rol():
         acciones_menu.entryconfig("Ver estadísticas", state="normal")
         acciones_menu.entryconfig("Inscribirse a curso", state="disabled")
         acciones_menu.entryconfig("Mis inscripciones", state="disabled")
-        acciones_menu.entryconfig("Ver mi progreso", state="disabled")
+
         
     else:  # estudiante
         acciones_menu.entryconfig("Listar usuarios", state="disabled")
@@ -363,7 +362,7 @@ def ajustar_menu_por_rol():
         acciones_menu.entryconfig("Ver estadísticas", state="disabled")
         acciones_menu.entryconfig("Inscribirse a curso", state="normal")
         acciones_menu.entryconfig("Mis inscripciones", state="normal")
-        acciones_menu.entryconfig("Ver mi progreso", state="normal")
+
 
 
 # ==================== INTERFAZ GRÁFICA ====================
@@ -387,7 +386,7 @@ acciones_menu.add_command(label="Ver estadísticas", command=ver_estadisticas)
 acciones_menu.add_separator()
 acciones_menu.add_command(label="Inscribirse a curso", command=inscribirse_curso)
 acciones_menu.add_command(label="Mis inscripciones", command=ver_mis_inscripciones)
-acciones_menu.add_command(label="Ver mi progreso", command=ver_progreso)
+
 menubar.add_cascade(label="Acciones", menu=acciones_menu)
 
 # Menú "Archivo"
